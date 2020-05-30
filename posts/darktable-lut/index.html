@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Darktable: Fun with LUTs</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+</head>
+<body>
+	<header>
+	=======================<br>
+	== <a href="http://sgtm.github.io/">Sounds good to me</a> ==<br>
+	=======================
+	<div style="float: right;"></div><br>
+	<p>
+	<nav>
+			<a href="/"><b>Start</b></a>.
+			
+			
+			<a href="/posts/"><b>Posts</b></a>.
+			
+			<a href="/tags/"><b>Tags</b></a>.
+			
+	</nav>
+	</p>
+	
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Darktable: Fun with LUTs</h1>
+			<b><time>30.05.2020 15:29</time></b>
+		       
+		           <a href="/tags/darktable">darktable</a>
+        	       
+		           <a href="/tags/lut">lut</a>
+        	       
+		           <a href="/tags/plot">plot</a>
+        	       
+		           <a href="/tags/visualization">visualization</a>
+        	       
+
+			<div>
+				<p>Darktable added a <code>lut3d</code> module a while ago. The module supports loading and
+applying 3D LUTs (Look Up Tables) that come as <em>Cube</em> or <em>Haldclut</em> files.</p>
+<p>Apparently LUTs are quite commonly used in the film industry, which means there
+are quite a few sites out there where people share their LUTs. For example
+<a href="https://freshluts.com">https://freshluts.com</a> More resources are linked from the <a href="https://www.darktable.org/2019/05/New%20module-lut3d/">Darktable blog post on
+lut3d</a>.</p>
+<p>The great thing about LUTs is that they allow you to quickly apply a style to
+images similarly to Instagram filters. So they are quite fun to play with.</p>
+<figure>
+    <img src="/img/lut_example.jpg"/> <figcaption>
+            <h4>Same image with different LUTs applied.</h4>
+        </figcaption>
+</figure>
+
+<p>When I was looking for tools to convert LUT formats, I came across
+<a href="http://opensource.mikrosimage.eu/ColorPipe-tools/PlotThatLUT/">ColorPipe-tool</a>
+and <code>PlotThatLUT</code>, which provide a nice way of visualizing the
+mapping that a LUT defines. Unfortunately the code is not maintained and does
+not work with Python3 or recent verions of PyOpenColorIO. So I spent a few  minutes fixing it up (<a href="http://github.com/sgtm/ColorPipe-tools">http://github.com/sgtm/ColorPipe-tools</a>) and now you can easily get nice plots from LUTs:</p>
+<p><figure>
+    <img src="/img/lutplot_bleak.png"/> <figcaption>
+            <h4>The bleak LUT from above. Notice the compressed color space</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="/img/lutplot_kodak.png"/> <figcaption>
+            <h4>A different LUT which maps to more of the color space</h4>
+        </figcaption>
+</figure>
+</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+				<li><a href="/posts/darktable-lut/">Darktable: Fun with LUTs</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2020 <a href="http://sgtm.github.io/"><b>Sounds good to me</b></a>.
+	<a href="https://github.com/sgtm"><b>Github</b></a>.
+	</p>
+</footer>
+
+</body>
+</html>
